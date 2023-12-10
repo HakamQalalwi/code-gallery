@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@400;500;700&display=swap');
+
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* html {box-sizing: border-box;} */
+
+/* *, *:before, *:after {box-sizing: inherit;} */
+
+
+:root{
+  --primary: #000;
+  --secondary: rgb(24, 24, 27);
+  --border: rgba(63, 63,70,0.4);
+}
+
+.light{
+  --primary: #fff;
+}
+
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+
+.container{
+  border: 2px solid var(--border);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary);
+}
+
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin: 3rem 0;
+}
