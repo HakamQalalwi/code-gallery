@@ -76,13 +76,13 @@ header .icon-menu:hover, header .mode:hover{
   border: 1px solid rgba(244, 165, 96);
 }
 
-header .icon-clear{
+header .icon-close{
   font-size: 1.5rem;
   color: var(--subtitle);
   transition: 0.3s;
 }
 
-header .icon-clear:hover{
+header .icon-close:hover{
   font-size: 1.7rem;
   color: crimson;
   rotate: 180deg;
@@ -108,7 +108,7 @@ header .fixed{
 
 header .fixed ul.modal{
   animation: mymove 0.7s 1;
-  width: 85%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -129,6 +129,7 @@ header .fixed ul.modal li:first-child{
   border: none;
   padding-bottom: 0;
   padding-top: 0.2rem;
+  margin-bottom: -1rem;
 }
 
 header .fixed ul.modal li:last-child{
