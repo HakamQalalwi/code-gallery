@@ -90,13 +90,15 @@ header .icon-close:hover{
 
 
 /* --------------------------------------
-    4. Responsive Design (media query)
+      3- Modal == pop up
 -----------------------------------------*/
 header .fixed{
   position: fixed;
   inset: 0;
   z-index: 10;
   background-color: rgba(40, 40, 48, 0.91);
+
+  backdrop-filter: blur(4px);
 }
 
 @keyframes mymove {
@@ -142,9 +144,9 @@ header .fixed ul.modal li a{
 }
 
 
-/* --------------------
-    1. Header Design
------------------------*/
+/* -----------------------------------
+4. Responsive Design (media query)
+--------------------------------------*/
 
 @media (max-width: 700px){
   header.flex nav{display: none;}
