@@ -2,6 +2,7 @@ import "./hero.css";
 import Lottie from "lottie-react";
 import devAnimation from "../../animation/dev.json";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const lottieRef = useRef();
@@ -9,13 +10,25 @@ const Hero = () => {
     <section className="hero flex">
       <div className="left-section">
         <div className="parent-avatar flex">
-          <img src="/public/images/me.png" className="avatar" alt="" />
+          <motion.img
+            initial={{ transform: "scale(0)" }}
+            animate={{ transform: "scale(1.1)" }}
+            transition={{ damping: 6, type: "spring", stiffness: 100 }}
+            src="/public/images/me.png"
+            className="avatar"
+            alt=""
+          />
           <div className="icon-verified"></div>
         </div>
 
-        <h1 className="title">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="title"
+        >
           Software designer, founder, and amateur astronaut.
-        </h1>
+        </motion.h1>
         <p className="sub-title">
           m Hakam Qalalwi, Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Sed, magni cumque quae velit consequatur numquam, pariatur
