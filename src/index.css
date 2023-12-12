@@ -107,6 +107,11 @@ button:active {
   scale: 0.9;
 }
 
+button:disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 @media (max-width: 1000px) {
   .container {
     --container-padding: 1.7rem;
