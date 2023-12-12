@@ -3,8 +3,17 @@ import Hero from "./components/hero/Hero";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
+import { useEffect } from "react";
+import { useState } from "react";
 
 function App() {
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 300 ? setShowScrollBTN(true) : setShowScrollBTN(false);
+    });
+  }, []);
+
+  const [showScrollBTN, setShowScrollBTN] = useState(false);
   return (
     <div id="up" className="container">
       <Header />
@@ -16,7 +25,10 @@ function App() {
       <div className="divider" />
       <Footer />
 
-      <a href="#up">
+      <a
+        style={{ opacity: showScrollBTN ? 1 : 0, transition: "1s" }}
+        href="#up"
+      >
         <button className="icon-keyboard_arrow_up scrollToTop"></button>
       </a>
     </div>
