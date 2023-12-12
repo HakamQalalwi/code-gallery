@@ -59,7 +59,7 @@ const Contact = () => {
                 animationData={doneAnimation}
                 loop={false}
               />
-              Your message has been sent successfully 😉
+              Message has been sent successfully 😉
             </p>
           )}
         </form>

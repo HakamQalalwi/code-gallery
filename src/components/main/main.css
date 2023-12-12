@@ -79,7 +79,7 @@ main section.right-section.flex {
 
 .card:hover {
   border: 1px solid var(--blue);
-  background-color: rgb(248, 248, 248);
+  /* background-color: rgb(248, 248, 248); */
   rotate: 1deg;
   scale: 1.01;
   cursor: pointer;
