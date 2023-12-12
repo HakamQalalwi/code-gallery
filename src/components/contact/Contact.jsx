@@ -5,7 +5,7 @@ import doneAnimation from "../../animation/done.json";
 import contactAnimation from "../../animation/contact.json";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xpzgvnej");
+  const [state, handleSubmit] = useForm("Your Activation Text");
 
   return (
     <section className="contact-us">

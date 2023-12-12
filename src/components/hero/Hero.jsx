@@ -30,10 +30,10 @@ const Hero = () => {
           Software designer, founder, and amateur astronaut.
         </motion.h1>
         <p className="sub-title">
-          m Hakam Qalalwi, Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Sed, magni cumque quae velit consequatur numquam, pariatur
-          doloremque animi officia dignissimos ducimus impedit iure fugit nulla
-          repudiandae rerum distinctio eos veritatis.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, magni
+          cumque quae velit consequatur numquam, pariatur doloremque animi
+          officia dignissimos ducimus impedit iure fugit nulla repudiandae rerum
+          distinctio eos veritatis.
         </p>
 
         <div className="all-icons flex">
