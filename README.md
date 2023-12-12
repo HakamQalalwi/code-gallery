@@ -70,6 +70,9 @@
   - Provide your email address and a message.
   - Click the "Submit" button to send an email to the developer.
   - A success message will be displayed upon successful submission.
+  - **Note:** To enable the contact form functionality, you need to sign up on [Website] and obtain your activation code. Replace `"Your Activation Text"` in the `useForm` hook inside `Contact.jsx` with the obtained activation code to start receiving emails from the website.
+
+[Website]: <https://formspree.io/>
 
 
 
